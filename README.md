@@ -1,2 +1,2 @@
-# LagenhetsuthyrningsPortal
+# LägenhetsuthyrningsPortal
 Laravel Project.
