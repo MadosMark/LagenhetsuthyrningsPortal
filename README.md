@@ -6,7 +6,8 @@
 
 # Main feature Goals:
 
-    :white_check_mark:  Logga in & Logga ut.
+
+-   Logga in & Logga ut.   :white_check_mark:  
 -   Skapa användare.
 -   Ladda upp bilder och text.
 -   Landningssida med olika lägenheter.
