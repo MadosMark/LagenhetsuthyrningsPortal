@@ -6,7 +6,7 @@
 
 # Main feature Goals:
 
--   Skapa användare.
+-   Skapa användare. <br>
     :white_check_mark: Logga in & Logga ut.
 -   Ladda upp bilder och text.
 -   Landningssida med olika lägenheter.
