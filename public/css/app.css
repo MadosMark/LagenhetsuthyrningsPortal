@@ -1,1 +1,111 @@
+:root {
+    font-size: 10px;
+}
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: rgb(243, 192, 110);
+    height: 100vh;
+}
+
+.publish_body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.publish_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.logout_tag {
+    color: blue;
+}
+.greeting {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.nav {
+    background-color: whitesmoke;
+    box-shadow: 0.1px 0.1px 8px black;
+    font-size: 1.6rem;
+}
+.publish_title {
+    font-size: 2, 1rem;
+}
+
+.nav-item {
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.row {
+    margin: 1rem;
+}
+.container_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+}
+.col {
+    background-color: #ffffff;
+    /* opacity: 70%; */
+    height: 30rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.5px 0.5px 2px black;
+    /* padding: 0.5rem; */
+    font-size: 1.6rem;
+    max-width: 500px;
+}
+.image {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0;
+    height: 50%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 0px 0.5px 2px grey;
+}
+.box_text {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.btn-primary {
+    width: 12rem;
+    margin: 1rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+.form-select {
+    width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+    .container_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .container_cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 
