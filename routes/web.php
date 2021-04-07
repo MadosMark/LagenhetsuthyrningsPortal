@@ -9,8 +9,6 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublishController;
-
-use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
 
