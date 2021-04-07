@@ -37,21 +37,31 @@
         margin: 2rem;
     }
 
+    .login_text {
+        margin: 2rem;
+    }
+
+    h1 {
+        margin-bottom: 4rem;
+    }
+
 </style>
 <body>
+    <h1>Välkommen till Lägenhets Portalen!</h1>
     <form class="login_form" action="/login" method="post" >
         @csrf
         <div class="mb-3">
             <label for="email" class="form-label">Email address:</label>
             <input name="email" type="email" class="form-control" id="email">
-            <div  class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password:</label>
             <input name="password" type="password" class="form-control" id="password">
+
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-primary">Logga In</button>
     </form>
+    <div  class="form-text"><p class="login_text">Har du inget konto? Skapat ett <a href="">här!</a></p></div>
     <div class="error">
     @include('errors')
     </div>

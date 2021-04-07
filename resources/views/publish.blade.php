@@ -29,22 +29,24 @@
 
 
         <div class="mb_3">
-                <label for="formFile" class="form-label">Upload picture here:</label>
-                <input class="form-control" type="file" id="formFile">
+            <label for="formFile" class="form-label">Upload picture here:</label>
+            <input class="form-control" type="file" id="formFile">
         </div>
-        <select class="form-select" aria-label="Default select example">
+        <div>
+            <select class="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
-        </select>
-          <div class="form-floating">
+            </select>
+        </div>
+        <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2">Comments</label>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Upload</button>
-              </div>
-          </div>
+            </div>
+        </div>
       </form>
 
     </section>
