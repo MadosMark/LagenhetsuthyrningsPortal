@@ -42,12 +42,17 @@
     }
 
     h1 {
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
     }
+    .login_text {
+    text-align: center;
+    color: grey;
+}
 
 </style>
 <body>
     <h1>Välkommen till Lägenhets Portalen!</h1>
+    <p class="login_text">En hemsida för privat personer som är <br>intresserade av att hyra ut sin lägenhet<br> smidigt och enkelt!</p>
     <form class="login_form" action="/login" method="post" >
         @csrf
         <div class="mb-3">
@@ -61,7 +66,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Logga In</button>
     </form>
-    <div  class="form-text"><p class="login_text">Har du inget konto? Skapat ett <a href="">här!</a></p></div>
+    <div  class="form-text"><p class="login_text">Har du inget konto? Skapat ett <a href="/register">här!</a></p></div>
     <div class="error">
     @include('errors')
     </div>

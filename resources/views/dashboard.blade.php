@@ -1,4 +1,5 @@
 @include('/header')
+
 <body>
 
     <div class="container_cards">
