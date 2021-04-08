@@ -7,16 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-
-
-
-
 class RegisterController extends Controller
 {
-
-
-
-
     public function __invoke(Request $request)
     {
         $this->validate(request(), [
@@ -30,13 +22,11 @@ class RegisterController extends Controller
             return back()->withErrors('Whoops! This user already exists!');
         }
 
-
         $newUser = new User();
         $newUser->name = $request->input('name');
         $newUser->email = $request->input('email');
         $newUser->password = Hash::make($request->input('password'));
         $newUser->save();
-
 
         Auth::login($newUser);
 
