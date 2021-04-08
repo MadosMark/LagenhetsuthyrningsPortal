@@ -16,6 +16,7 @@ class RegisterController extends Controller
 
 
 
+
     public function __invoke(Request $request)
     {
         $this->validate(request(), [
@@ -24,12 +25,17 @@ class RegisterController extends Controller
             'password' => ['required', 'string']
         ]);
 
+        $emailValidation = User::where('email', '=', $request->input('email'))->first();
+        if ($emailValidation !== null) {
+            return back()->withErrors('Whoops! This user already exists!');
+        }
+
+
         $newUser = new User();
         $newUser->name = $request->input('name');
         $newUser->email = $request->input('email');
         $newUser->password = Hash::make($request->input('password'));
         $newUser->save();
-
 
 
         Auth::login($newUser);

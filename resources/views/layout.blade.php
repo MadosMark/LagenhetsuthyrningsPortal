@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
         <title>Lägenhets Portalen</title>
     </head>
+@if (Auth::guest())
 
+@else
     <header>
         <div class="nav-bar">
             <ul class="nav justify-content-end">
@@ -26,10 +28,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="logout">Logga ut</a>
                 </li>
+                @endif
             </ul>
         </div>
     </header>
-    
+
     <body>
         @yield('content')
     </body>

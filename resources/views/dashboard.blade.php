@@ -2,8 +2,7 @@
 
 @section('content')
 
-{{-- <div class="greeting">
-</div> --}}
+
 <p class="greeting">Välkommen till Lägenhets Portalen, {{ $user->name }}! </p>
 @include('errors')
 <div class="container_cards">

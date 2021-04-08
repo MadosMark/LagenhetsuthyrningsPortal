@@ -9,11 +9,13 @@
             <div class="col-md-6">
             <div id="logbox">
               <form id="signup" method="POST" action="/register">
-                <input name="name" type="name" placeholder="Namn" pattern="^[\w]{3,16}$" autofocus="autofocus" required="required" class="input pass"/>
+                <input name="name" type="name" placeholder="Namn" pattern="([^\s][A-z0-9À-ž\s]+)" autofocus="autofocus" required="required" class="input pass"/>
                 <input name="email" type="email" placeholder="Email adress" class="input pass"/>
                 <input name="password" type="password" placeholder="Lösenord" required="required" class="input pass"/>
-                {{-- <input name="user[password2]" type="password" placeholder="Upprepa lösenord" required="required" class="input pass"/> --}}
                 <input type="submit" value="Skapa konto!" class="inputButton"/>
+                <div class="error_register">
+                    @include('errors')
+                    </div>
 
               </form>
             </div>
