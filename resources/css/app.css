@@ -24,14 +24,28 @@ body {
     width: 50%;
 }
 
-
 .logout_tag {
     color: blue;
 }
 .greeting {
     display: flex;
+    justify-content: center;
     align-items: center;
-    position: absolute;
+    margin: 2rem;
+    font-size: 1.6rem;
+}
+.profile_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.apply_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav {
@@ -328,5 +342,8 @@ input {
 @media screen and (min-width: 1000px) {
     .container_cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .col-md-12 {
+        width: 100%;
     }
 }

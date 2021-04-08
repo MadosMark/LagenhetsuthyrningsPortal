@@ -1,6 +1,6 @@
-@include('/header')
+@extends('layout')
 
-<body>
+@section('content')
     <div class="publish_body">
     <section class="publish_container">
     <h1 class="publish_title">Fyll i nedan för annonsering:</h1>
@@ -49,9 +49,8 @@
         </div>
       </form>
 
+
     </section>
 </div>
 
-</body>
-<script src="{{mix('js/app.js')}}"></script>
-</html>
+@endsection

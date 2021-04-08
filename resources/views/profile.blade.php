@@ -1,5 +1,7 @@
-@include('/header')
-<body>
+@extends('layout')
+
+@section('content')
+    <section class="profile_container">
     <div class="page-content page-container" id="page-content">
         <div class="padding">
             <div class="row container d-flex justify-content-center">
@@ -43,7 +45,6 @@
             </div>
         </div>
     </div>
+</section>
 
-</body>
-<script src="{{mix('js/app.js')}}"></script>
-</html>
+@endsection
