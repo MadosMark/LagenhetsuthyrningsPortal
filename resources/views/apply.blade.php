@@ -12,8 +12,8 @@
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Hyra:</li>
-          <li class="list-group-item">Kvadrat:</li>
-          <li class="list-group-item">Område:</li>
+          <li class="list-group-item">Rum:</li>
+          <li class="list-group-item">Stad:</li>
         </ul>
         <div class="card-body">
           <a href="#" class="card-link">Skicka in intresseanmälan</a>
