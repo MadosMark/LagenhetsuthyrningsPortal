@@ -178,6 +178,9 @@ h6 {
     p {
         font-size: 14px;
     }
+    .publish_container {
+        width: 40%;
+    }
 }
 
 .card-block {
@@ -338,6 +341,9 @@ input {
     .container_cards {
         grid-template-columns: 1fr 1fr;
     }
+    .publish_container {
+        width: 40%;
+    }
 }
 @media screen and (min-width: 1000px) {
     .container_cards {
@@ -345,5 +351,8 @@ input {
     }
     .col-md-12 {
         width: 100%;
+    }
+    .publish_container {
+        width: 40%;
     }
 }

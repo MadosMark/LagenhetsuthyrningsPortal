@@ -19,9 +19,9 @@
           <label for="inputZip" class="form-label">Postkod</label>
           <input type="text" class="form-control" id="inputZip">
         </div>
-        <div class="col-md-2">
-            <label for="inputZip" class="form-label">Hyra</label>
-            <input type="text" class="form-control" id="inputZip">
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Hyra</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="">
           </div>
 
 
@@ -43,7 +43,7 @@
         </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Text</label>
+            <label for="floatingTextarea2">Beskrivning</label>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Ladda upp</button>
             </div>
