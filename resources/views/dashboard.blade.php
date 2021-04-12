@@ -2,17 +2,23 @@
 
 @section('content')
 
-
 <p class="greeting">Välkommen till Lägenhets Portalen, {{ $user->name }}! </p>
-@include('errors')
+
+@foreach ($apartments as $apartment)
 <div class="container_cards">
         <div class="col">
-              <img class="image" src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
-            <div class="box_text">
-                <h3> Polkagatan 14D</h3>
-                  <p>Läs mer om lägenheten här:</p>
-                  <button onclick="window.location='{{ url('apply') }}'" type="button" class="btn btn-primary">Ansök</button>
-            </div>
-        </div>
+              <img class="image" src=" {{ ("images/$apartment->image") }}" alt="">
 
+            <div class="box_text">
+                <h3> {{ $apartment->address }}</h3>
+                  <p>Läs mer om lägenheten här:</p>
+                  <form action="/apply" method="POST">
+                    @csrf
+                    <label for="apartment_id"></label>
+                      <button name="apartment_id" id="apartment_id" value="{{ $apartment->id }}" type="submit" class="btn btn-primary">Ansök</button>
+                 </form>
+                </div>
+        </div>
+        @endforeach
+        @include('errors')
 @endsection

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Apartment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,12 +16,19 @@ class ApplyController extends Controller
      */
 
 
-    public function __invoke()
+    public function __invoke(Request $request)
     {
+
+        $this->validate(request(), [
+            'apartment_id' => ['required', 'string'],
+        ]);
         $user = Auth::user();
+        $apartment = Apartment::where('id', $request->apartment_id);
+
 
         return view('apply', [
-            'user' => $user
+            'user' => $user,
+            'apartment' => $apartment
         ]);
     }
 }

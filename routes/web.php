@@ -33,5 +33,6 @@ Route::get('profile', ProfileController::class)->middleware('auth');
 Route::view('publish', 'publish')->middleware('auth');
 Route::post('publish', PublishController::class)->middleware('auth');
 Route::get('apply', ApplyController::class)->middleware('auth');
+Route::post('apply', ApplyController::class)->middleware('auth');
 Route::view('register', 'register');
 Route::post('register', RegisterController::class);
