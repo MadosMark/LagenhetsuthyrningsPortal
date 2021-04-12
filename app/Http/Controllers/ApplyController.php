@@ -23,7 +23,7 @@ class ApplyController extends Controller
             'apartment_id' => ['required', 'string'],
         ]);
         $user = Auth::user();
-        $apartment = Apartment::where('id', $request->apartment_id);
+        $apartment = Apartment::where('id', $request->apartment_id)->first();
 
 
         return view('apply', [

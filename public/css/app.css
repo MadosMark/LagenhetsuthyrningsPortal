@@ -46,11 +46,29 @@ body {
     height: 100%;
 }
 
+.apply_image {
+    height: 40rem;
+    width: 55rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
 .apply_container {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5rem;
+}
+
+.apply_button {
+    color: black;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+.text-muted {
+    width: 20rem;
+    height: 3rem;
 }
 
 .nav {

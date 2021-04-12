@@ -4,8 +4,8 @@
 
 <p class="greeting">Välkommen till Lägenhets Portalen, {{ $user->name }}! </p>
 
-@foreach ($apartments as $apartment)
 <div class="container_cards">
+    @foreach ($apartments as $apartment)
         <div class="col">
               <img class="image" src=" {{ ("images/$apartment->image") }}" alt="">
 
@@ -17,8 +17,9 @@
                     <label for="apartment_id"></label>
                       <button name="apartment_id" id="apartment_id" value="{{ $apartment->id }}" type="submit" class="btn btn-primary">Ansök</button>
                  </form>
-                </div>
+            </div>
         </div>
-        @endforeach
+            @endforeach
+</div>
         @include('errors')
 @endsection

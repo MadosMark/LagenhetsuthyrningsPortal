@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
 
 class ProfileController extends Controller
 {
@@ -15,12 +17,16 @@ class ProfileController extends Controller
      */
 
 
-    public function __invoke()
+    public function __invoke(Request $request)
     {
+
+
         $user = Auth::user();
+        // $apartments = User::find(1)->apartments;
 
         return view('profile', [
-            'user' => $user
+            'user' => $user,
+            'apartments' => $user->apartments
         ]);
     }
 }

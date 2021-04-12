@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+
     <section class="profile_container">
     <div class="page-content page-container" id="page-content">
         <div class="padding">
@@ -11,8 +12,8 @@
                             <div class="col-sm-4 bg-c-lite-green user-profile">
                                 <div class="card-block text-center text-white">
                                     <div class="m-b-25"> <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> </div>
-                                    <h6 class="f-w-600">Victor Stranne</h6>
-                                    <p>Blev medlem 14 dagar sen.</p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                                    <h6 class="f-w-600">{{ $user->name }}</h6>
+                                    <p>Har varit medlem sedan: <br> {{ $user->created_at }}</p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                                 </div>
                             </div>
                             <div class="col-sm-8">
@@ -21,18 +22,20 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <p class="m-b-10 f-w-600">Namn</p>
-                                            <h6 class="text-muted f-w-400">Victor Stranne</h6>
+                                            <h6 class="text-muted f-w-400">{{ $user->name }}</h6>
                                         </div>
                                         <div class="col-sm-6">
                                             <p class="m-b-10 f-w-600">Email</p>
-                                            <h6 class="text-muted f-w-400">victor@stranne.se</h6>
+                                            <h6 class="text-muted f-w-400">{{ $user->email}}</h6>
                                         </div>
                                     </div>
                                     <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Lägenheter</h6>
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <p class="m-b-10 f-w-600">Uthyres</p>
-                                            <h6 class="text-muted f-w-400">Senapsgatan 34</h6>
+                                            @foreach ($apartments as $apartment)
+                                            <h6 class="text-muted f-w-400"> {{ $apartment->address }}</h6>
+                                            @endforeach
                                         </div>
 
                                     </div>

@@ -36,7 +36,7 @@ class AddFieldsToApartments extends Migration
             $table->dropColumn("address");
             $table->dropColumn("city");
             $table->dropColumn("rent");
-            $$table->dropColumn("rooms");
+            $table->dropColumn("rooms");
             $table->dropColumn("description");
             $table->dropColumn("image");
         });
