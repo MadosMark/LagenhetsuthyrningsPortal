@@ -14,7 +14,6 @@ class AddFieldsToApartments extends Migration
     public function up()
     {
         Schema::table('apartments', function (Blueprint $table) {
-
             $table->integer('user_id');
             $table->string('address');
             $table->string('city');
@@ -33,7 +32,6 @@ class AddFieldsToApartments extends Migration
     public function down()
     {
         Schema::table('apartments', function (Blueprint $table) {
-
             $table->dropColumn('user_id');
             $table->dropColumn("address");
             $table->dropColumn("city");
