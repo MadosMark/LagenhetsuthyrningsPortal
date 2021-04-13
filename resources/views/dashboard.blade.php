@@ -3,7 +3,6 @@
 @section('content')
 
 <p class="greeting">Välkommen till Lägenhets Portalen, {{ $user->name }}! </p>
-
 <div class="container_cards">
     @foreach ($apartments as $apartment)
         <div class="col">
@@ -12,11 +11,7 @@
             <div class="box_text">
                 <h3> {{ $apartment->address }}</h3>
                   <p>Läs mer om lägenheten här:</p>
-                  <form action="/apply" method="POST">
-                    @csrf
-                    <label for="apartment_id"></label>
-                      <button name="apartment_id" id="apartment_id" value="{{ $apartment->id }}" type="submit" class="btn btn-primary">Ansök</button>
-                 </form>
+                      <button onclick="window.location.href='/apply/{{ $apartment->id }}'" class="btn btn-primary">Ansök</button>
             </div>
         </div>
             @endforeach

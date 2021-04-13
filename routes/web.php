@@ -9,6 +9,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublishController;
+use App\Models\Apartment;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,7 +33,8 @@ Route::get('dashboard', DashboardController::class)->middleware('auth');
 Route::get('profile', ProfileController::class)->middleware('auth');
 Route::view('publish', 'publish')->middleware('auth');
 Route::post('publish', PublishController::class)->middleware('auth');
-Route::get('apply', ApplyController::class)->middleware('auth');
-Route::post('apply', ApplyController::class)->middleware('auth');
+Route::get('apply/{apartment:id}', function (Apartment $apartment) {
+    return view('apply', ['apartment' => $apartment]);
+})->middleware('auth');
 Route::view('register', 'register');
 Route::post('register', RegisterController::class);
