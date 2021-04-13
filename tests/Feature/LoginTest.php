@@ -34,6 +34,6 @@ class LoginTest extends TestCase
                 'password' => '123',
             ]);
 
-        $response->assertSeeText('Välkommen');
+        $response->assertStatus('200');
     }
 }
