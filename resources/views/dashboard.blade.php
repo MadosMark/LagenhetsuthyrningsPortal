@@ -4,7 +4,7 @@
 
 <p class="greeting">Välkommen till Lägenhets Portalen, {{ $user->name }}! </p>
 
-<div class="container_cards">
+<div id="app" class="container_cards">
     @foreach ($apartments as $apartment)
         <div class="col">
               <img class="image" src=" {{ ("images/$apartment->image") }}" alt="">

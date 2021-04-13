@@ -20,7 +20,7 @@
           <li class="list-group-item">Hyra: {{ $apartment->rent }}kr</li>
           <li class="list-group-item">Rum: {{ $apartment->rooms}}</li>
           <li class="list-group-item">Stad: {{ $apartment->city }}</li>
-          <li class="list-group-item">Hyrs ut av: {{ $user->name }}</li>
+          <li class="list-group-item">Hyrs ut av: {{ $apartment->user_id }}</li>
         </ul>
         <div class="card-body" id="card_body_button">
           <a class="apply_button" href="#" class="card-link">Skicka in intresseanmälan</a>
