@@ -1,0 +1,25 @@
+<?php
+
+namespace Tests\Feature;
+
+use App\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Hash;
+use Tests\TestCase;
+
+class PublishTest extends TestCase
+{
+
+    use RefreshDatabase;
+
+    public function test_view_publish_form()
+    {
+        $user = User::factory()->create();
+        $user->save();
+
+        $response = $this->actingAs($user)->get('/publish');
+        $response->assertSeeText('Hyra');
+        $response->assertStatus(200);
+    }
+}
