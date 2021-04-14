@@ -2,7 +2,7 @@
 
 @section('content')
 
-<p class="greeting">Välkommen till Lägenhets Portalen, {{ $user->name }}! </p>
+<p class="greeting">Välkommen till Lägenhetsportalen, {{ $user->name }}! </p>
 <div class="container_cards">
     @foreach ($apartments as $apartment)
         <div class="col">
@@ -11,7 +11,7 @@
             <div class="box_text">
                 <h3> {{ $apartment->address }}</h3>
                   <p>Läs mer om lägenheten här:</p>
-                      <button onclick="window.location.href='/apply/{{ $apartment->id }}'" class="btn btn-primary">Ansök</button>
+                      <a href="/apply/{{ $apartment->id }}" class="btn btn-primary">Ansök</a>
             </div>
         </div>
             @endforeach

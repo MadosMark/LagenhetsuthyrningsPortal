@@ -29,7 +29,7 @@ Route::get('dashboard', DashboardController::class)->middleware('auth');
 Route::get('profile', ProfileController::class)->middleware('auth');
 Route::view('publish', 'publish')->middleware('auth');
 Route::post('publish', PublishController::class)->middleware('auth');
-Route::get('apply/{apartment}', function (Apartment $apartment) {
+Route::get('apply/{apartment:id}', function (Apartment $apartment) {
     return view('apply', ['apartment' => $apartment]);
 })->middleware('auth');
 Route::view('register', 'register');
