@@ -19,7 +19,6 @@ class RegisterTest extends TestCase
 
     public function test_register_form()
     {
-
         $response = $this
             ->followingRedirects()
             ->post('/register', [

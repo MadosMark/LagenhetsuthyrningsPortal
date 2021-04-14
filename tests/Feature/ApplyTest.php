@@ -12,7 +12,6 @@ use Tests\TestCase;
 
 class ApplyTest extends TestCase
 {
-
     use RefreshDatabase;
 
     public function test_apply()

@@ -10,7 +10,6 @@ use Tests\TestCase;
 
 class PublishTest extends TestCase
 {
-
     use RefreshDatabase;
 
     public function test_view_publish_form()
