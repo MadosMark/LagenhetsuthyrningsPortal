@@ -6,9 +6,9 @@ namespace Tests\Feature;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Support\Facades\Hash;
 use Tests\TestCase;
+
 
 class LoginTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LoginTest extends TestCase
     public function test_view_login_form()
     {
         $response = $this->get('/');
-        $response->assertSeeText('Email address:');
+        $response->assertSeeText('Email address');
         $response->assertStatus(200);
     }
     /**
@@ -30,7 +30,7 @@ class LoginTest extends TestCase
         $user = new User();
         $user->name = 'Pelle Svanlos';
         $user->email = 'example@yrgo.se';
-        $user->password = Hash::make('123');
+        $user->password = Hash::make(123);
         $user->save();
 
         $response = $this
