@@ -12,4 +12,4 @@
 -   Landningssida med olika lägenheter.
 -   Intresseanmälan för lägenhet.
 
-Git -clone https://github.com/MadosMark/LagenhetsuthyrningsPortal.git 
+
