@@ -4,17 +4,12 @@
 
 ![Alt Text](https://media.giphy.com/media/tHWaJAKfa7EWOBSNgQ/giphy.gif)
 
-# Main feature Goals:
+# Hur hemsidan fungerar:
 
-
--   Logga in & Logga ut.   :white_check_mark:  
 -   Skapa användare.
+-   Logga in & Logga ut.   
 -   Ladda upp bilder och text.
 -   Landningssida med olika lägenheter.
--   Sortera efter område etc.
 -   Intresseanmälan för lägenhet.
 
-# Extra features Goals:
 
--   Räkna dagar för användare.
--   Kösystem.
