@@ -16,11 +16,7 @@ class LogoutTest extends TestCase
         $user = User::factory()->create();
         $user->save();
 
-        $response = $this->actingAs($user)->get('logout');
-
-        $response = Auth::logout();
-
-        $response = $this->get('/');
+        $response = $this->actingAs($user)->followingRedirects()->get('logout');
         $response->assertSeeText('Email');
     }
 }
