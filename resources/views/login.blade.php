@@ -51,7 +51,7 @@
 
 </style>
 <body>
-    <h1>Välkommen till Lägenhets Portalen!</h1>
+    <h1>Välkommen till Lägenhetsportalen!</h1>
     <p class="login_text">En hemsida för privat personer som är <br>intresserade av att hyra ut sin lägenhet<br> smidigt och enkelt!</p>
     <form class="login_form" action="/login" method="post" >
         @csrf

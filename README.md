@@ -12,6 +12,7 @@
 -   Landningssida med olika lägenheter.
 -   Intresseanmälan för lägenhet.
 
+
 # Code Review By Simon & Réka
 
 Based from [this](https://github.com/MadosMark/LagenhetsuthyrningsPortal/commit/47e7819b2792fe13bfe09572dafa9edc6d4b69bc) version.
@@ -37,3 +38,5 @@ Based from [this](https://github.com/MadosMark/LagenhetsuthyrningsPortal/commit/
 -   Error prevention in the signup form, the popup only seems to work on the username-field. Might just be buggy for me though.
 -   Can't find any n+1 problems!
 -   The site looks really great, good job! :tada:
+
+
