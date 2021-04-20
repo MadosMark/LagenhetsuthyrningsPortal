@@ -1,6 +1,6 @@
 # Lägenhetsuthyres Portal
 
--   Hemsida där man kan hyra och hyra ut lägenheter.
+-   Hemsida där man kan hyra och hyra ut lägenheter privat.
 
 ![Alt Text](https://media.giphy.com/media/tHWaJAKfa7EWOBSNgQ/giphy.gif)
 
@@ -11,6 +11,7 @@
 -   Ladda upp bilder och text.
 -   Landningssida med olika lägenheter.
 -   Intresseanmälan för lägenhet.
+-   Laravel Tests utförda
 
 
 # Website - Log In Page:
