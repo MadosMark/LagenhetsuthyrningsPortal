@@ -14,8 +14,8 @@
 
 
 # Website - Log In Page:
-![Alt text]()
+![Alt text](https://github.com/MadosMark/LagenhetsuthyrningsPortal/blob/main/Screenshot%202021-04-20%20at%2013.32.48.png)
 
 
 # Website Layout:
-![Alt text]()
+![Alt text](https://github.com/MadosMark/LagenhetsuthyrningsPortal/blob/main/Screenshot%202021-04-20%20at%2013.33.01.png)
